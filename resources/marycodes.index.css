@@ -7,6 +7,7 @@ Work on:
     -projects will go under certifications
         -to link: .\path.html#id
     -make sure everything is working properly before moving on
+    -Want button to be fully clickable. Use <button>
 */
 body{
     font-family: 'EB Garamond';
@@ -238,6 +239,8 @@ th,
 td{
     padding: 1rem;
 }
+
+
 /*Certification*/
 .course{
     width: 100%;
@@ -249,5 +252,25 @@ td{
     text-align: center;
 }
 
-/*Projects section*/
+/*Projects section
+Woeking on how this is displayed*/
 
+.projects{
+    width: 100%;
+   
+}
+
+.proj td.cheat,
+.proj td.cozy{
+    width: 0px;
+    margin: 15px;
+}
+
+#projects img{
+    width: auto;
+    height: 200px;
+}
+
+#projects p{
+    max-width: 250px;
+}

@@ -49,27 +49,27 @@
 
     </header>
 
-    <!--Main: using <table>-->
-        <main>
+    <!--Main-->
+    <main>
 
-            <div class="cert">
+        <div class="cert">
                 
-                <table class="course">
-                 <!--Coursera Certificates-->
-                    <caption>Certification</caption>
-                        <th>Coursera</th>
-                            <tr>
+            <table class="course">
+             <!--Coursera Certificates-->
+                <caption>Certification</caption>
+                    <th>Coursera</th>
+                        <tr>
                                 <td>
                                     <img src=".\Images\bits&bytes.png" alt="">
                                 </td>
                                 <td>
                                     <img src=".\Images\tech-support-fundamentals.png" alt="">
                                 </td>
-                            </tr>
+                        </tr>
 
-                <!--Codecademy Certificates-->
-                        <th>Codecademy</th>
-                            <tr>
+            <!--Codecademy Certificates-->
+                    <th>Codecademy</th>
+                        <tr>
                                 <td>
                                     <img src=".\Images\command-line.png" alt="Learn the Command Line Course Certificate from Codecademy">
                                 </td>
@@ -83,30 +83,40 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                            </tr>
-                </table>
-            </div>
+                        </tr>
+            </table>
+        </div>
 
-            <div>
+        <div class="projects">
                 
-                <h3>Projects</h3>
+            <table id="projects">
+                <caption>Projects</caption>
 
-                    <table class="projects">
-                        <caption>Codecademy</caption>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                    </table>
-                    <table>
-                        <caption>Personal Projects</caption>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                    </table>
-            </div>
-        </main>
+                <!--Projects from Codecademy-->
+                
+                    <th id="codecademy">Codecademy</th>
+                        <tr class="proj">
+                            <td class="cheat">
+                                <img src=".\Images\CheatSheetProject.png" alt="Project assigned by Codecademy called Cheat Sheet">
+                                <p>This project was one of my first projects I got to do on my own, just a basic idea of what Codecademy wanted me to accomplish with this project.</p>
+                            </td>
+
+                            <td class="cozy">
+                                <img src=".\Images\cozy-tea.png" alt="Project assigned by Codecademy called Cozy Tea"><!--Need to fix how this displays-->
+                                <p>In this project I got first hand experience with broken code, and I had to figure out on my own, ways to fix it. I used several resources to help me accomplish this project.<em>This is only a mock up website</em></p>
+                            </td>
+                        </tr>
+                    
+                <!--Personal Projects I choose to work on:
+                Need to add pics of project and <a></a> to redirect to github for website-->    
+                    <th id="myOwn">Personal Projects</th>
+                        <tr class="proj">
+                            <td></td>
+                            <td></td>
+                        </tr>
+        </table>
+        </div>
+    </main>
 
 </body>
 </html>
