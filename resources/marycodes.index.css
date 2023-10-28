@@ -1,13 +1,15 @@
 /*Possible colors for website: #DEACF5, #9754CB, #C3ABDB, #9D92D6
 video: Portfolio Website using HTML & CSS | personal portfolio website - 3s Webcoder
 Work on:
--Add the @media screen
--Make sure icons work properly <links>
--WORKING ON: cert.html --Projects
-    -projects will go under certifications
-        -to link: .\path.html#id
-    -make sure everything is working properly before moving on
-    -Want button to be fully clickable. Use <button>
+-Add @media Query
+*Make sure:
+    -everything is working properly before moving on
+    -everything looks presentable
+    -links look like they take you to where you want to go
+    -buttons look like buttons
+    
+    In Projects
+    -text is below the correct project img
 */
 body{
     font-family: 'EB Garamond';
@@ -68,13 +70,18 @@ nav ul li a:hover{
 
 .top{
     width: 80%;
-    height: 70vh;
-    margin: 5% auto;
+    height: 80vh;
+    margin: 50px 25%;
+    margin-bottom: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.top .right{
+    margin-top:-50px;
+    margin-left: 25px;
+}
 .left{
     text-align: center;
     font-family: 'Dancing Script';
@@ -87,7 +94,7 @@ button{
     border: none;
     border-radius: 80px;
     outline: none;
-    padding: 5px 10px;
+    padding: 15px 20px;
     margin: 2em;
     background-color: #DEACF5;
     color: #fff;
@@ -97,8 +104,8 @@ button{
 
 button:hover{
     background-color: #9D92D6;
-    padding: 4px 9px;
-    margin: 2.1em;
+    padding: 12px 17px;
+    margin: 2.2em;
     font-weight: bold;
     box-shadow: 0 0 5px #9754CB;
 }
@@ -106,22 +113,17 @@ button:hover{
 /*Picture on right side of intro*/
 .right{
     width: 100%;
-    height: 40vh;
+    height: 50%;
     overflow: hidden; 
-    clip-path: path('M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 150 200 z');
+    clip-path: path("M 0 300 L 0, 75 A 5,5 0,0,1 150,75 L 200 2000 z");
 }
 
 .right img{
     width: 200px;
     height: auto;
-    margin-top: -50px;
-    margin-left: -13px;
-}
-
-/*Bottom part*/
-.bottom{
-    width: 100%;
-    height: 70vh;
+    margin-top: -30px;
+    margin-left: -15px;
+    
 }
 
 /*About me*/
@@ -162,12 +164,14 @@ button:hover{
     display: flex;
     text-align: center;
     padding: 50px;
+    margin-left: 15%;
     justify-content: space-between;
     position: relative;
     
 }
+
 .myProjects .box{
-    padding: 5px 10px;
+    padding: 15px 20px;
     margin: 0 15px;
     box-sizing: border-box;
     background-color: #DEACF5;
@@ -180,7 +184,7 @@ button:hover{
 
 .myProjects .box:hover{
     background-color: #9D92D6;
-    padding: 1px 5px;
+    padding: 12px 17px;
     margin: 0 20px;
     font-weight: bold;
     box-shadow: 0 0 5px #9754CB;
@@ -193,7 +197,8 @@ footer{
     text-align: center;
     background-color: #DEACF5;
     box-shadow: 0 0 15px #9754CB;
-    margin-top: 200px;
+    padding-bottom: 150px;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -274,3 +279,47 @@ Woeking on how this is displayed*/
 #projects p{
     max-width: 250px;
 }
+
+.proj a{
+    color: #000;
+    border: .5mm ridge #DEACF5;
+    border-radius: 10%;
+}
+
+.proj a:hover{
+    background-color: #DEACF5;
+    font-weight: bold;
+    box-shadow: 5px 3px 3px #deacf5;
+}
+
+/*@media query from here on out*/
+
+@media screen and (max-width: 800px){
+    /*A little about...*/
+
+.top{
+    margin: 50px 15%;
+}
+
+.top .right{
+    margin-left: 25px;
+}
+
+/*My projects*/
+
+.myProjects{
+    width: 60%;
+    padding: 50px 50px;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;   
+}
+
+.myProjects .box{
+    padding: 15px 50px;
+    margin: 0 15px;
+    left: 15%;
+
+}
+
+/*Tables: Certificates*/
