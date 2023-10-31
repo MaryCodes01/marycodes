@@ -295,7 +295,7 @@ footer{
 
 .projects div.proj{
     width: 100%;
-    min-width: 300px;
+    min-width: 250px;
     margin: 0;
     display: flex;
     flex-direction: row;
@@ -358,13 +358,10 @@ footer{
 
 /*Tables: Certificates*/
 
-td{
-
-}
-
 .cert img{
-    width: 100%;
-    height: 150px;
+    width: auto;
+    height: 250px;
+    margin-right: 15px;
 }
 
 /*Project section*/
@@ -397,7 +394,8 @@ td{
 
 .top{
     position: relative;
-    top: -400px;
+    top: -50px;
+    left: -50px;
 }
 
 .top p{
@@ -423,7 +421,8 @@ button{
     height: 200px;
     clip-path: circle(40%);
     position: absolute;
-    left: 250px;
+    left: 215px;
+    top: 430px;
 }
 
 .right img{
@@ -434,38 +433,226 @@ button{
 
 /*About me*/
 .about-me{
-    width: 80%;
-    max-width: 850px;
-    height: 550px;
-    margin: auto;
-    padding: 0;
-    display: flex;
-    place-items: center;
-    box-shadow: 0 0 1em #9754CB;
-    justify-content: space-between;
-    box-sizing: border-box;
+    width: 95%;
+}
+
+.about-me div.about-img{
+    width: 300px;
+    height: 300px;
     overflow: hidden;
+    clip-path: circle(35%);
+    margin: 0;
+    padding: 0;
 }
 
 .about-img img{
-    width: auto;
-    height: 350px;
+    width: 180px;
+    height: auto;
+    margin-top: 60px;
     margin-left: 5px;
-    margin-right: 0;
 }
 
 .bottom .about{
-    margin: 15px;
-    padding-bottom: 50px;
-    justify-content: space-between;
+    margin: 0 15px;
+    padding-bottom: 0;
+    word-wrap: break-word;
 }
 
-.about p{
-    text-align: center;
-    max-width: 550px;
-    margin-left: 0;
+/*My projects: 
+This is the button that redirects to the #project section*/
+
+#projects{
+    width: 100%;
+    margin: 0;
+}
+
+.myProjects{
+    width: 100%;
+    place-items: center;
+    margin: 0;    
+}
+
+.myProjects .box{
+    width: 180px;
+    padding: 15px 10px;
+    margin: 50px 5px;
+}
+
+.myProjects .box:hover{
+    padding: 11px 6px;
+    margin: 50px 5px;
+}
+
+/*Certification*/
+
+/*coursera*/
+
+.cert img{
+    width: 95%;
+    height: auto;
+}
+
+/*Projects section*/
+
+#projects{
+    width: 100%;
+    margin: 0;
+}
+
+.projects{
+    width: 100%;
+}
+
+.proj .cheat,
+.proj .cozy,
+.proj .website,
+.proj .vm{
+    width: 100%;
+   margin: 15px 15%;
 }
 
 }
+
+@media screen and (max-width: 500px){
+
+    /*navigation*/
+
+    nav.desktop{
+        display: none;
+    }
+
+    nav.mobile{
+        display: block;
+    }
+
+    /*A little about...*/
+
+    .top{
+        width: 300px;
+        left: -100px;
+    }
+
+    .top p{
+        width: 200%;
+    }
+    
+    /*Picture on right side of intro*/
+    .right{
+    left: 205px;
+    top: 425px;
+    }
+    
+    /*About me*/
+    .about-me{
+        width: 100%;
+        height: fit-content;
+        display: block;
+        text-align: center;
+    }
+    
+    .about-me div.about-img{
+        width: 250px;
+        height: 250px;
+        margin-top: -40px;
+        margin-left: 80px;
+        clip-path: circle(45%);
+  
+    }
+    
+    .about-img img{
+    width: 150px;
+    }
+    
+    .bottom .about{
+        margin: 25px;
+    }
+    
+    /*My projects: 
+    This is the button that redirects to the #project section*/
+    
+    .myProjects .box{
+        width: 80%;
+        margin: 25px 10px;
+    }
+    
+    .myProjects .box:hover{
+        margin: 29px 10px;
+    }
+   
+/*Certification*/
+
+/*coursera*/
+
+.cert img{
+    width: 85%;
+}
+
+/*Projects section*/
+
+.proj .cheat,
+.proj .cozy,
+.proj .website,
+.proj .vm{
+    width: 85%;
+   margin: 25px;
+}
+
+}
+
+@media screen and (max-width: 350px){
+
+    /*navigation*/
+
+    nav.desktop{
+        display: none;
+    }
+
+    nav.mobile{
+        display: block;
+    }
+
+    /*A little about...
+
+    .top{
+        width: 300px;
+        left: -100px;
+    }
+
+    .top p{
+        width: 200%;
+    }
+    
+    /*Picture on right side of intro
+    .right{
+    left: 205px;
+    top: 425px;
+    }
+    
+    /*About me*/
+    
+    .about-me div.about-img{
+        margin-left: 30px;  
+    }
+    
+    .bottom .about{
+        margin: 8px;
+    }
+
+/*Projects section*/
+
+.proj .cheat,
+.proj .cozy,
+.proj .website,
+.proj .vm{
+    width: 50%;
+   margin: 5px;
+}
+/*
+.proj .vm img{
+    width: auto;
+    height: 50px;
+}
+}
+
 
 /*Work on @media for */
