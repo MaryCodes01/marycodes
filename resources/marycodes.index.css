@@ -1,19 +1,25 @@
 :root {
-    --step--2: clamp(0.5206rem, 0.4865rem + 0.1705vw, 0.64rem);
-    --step--1: clamp(0.625rem, 0.575rem + 0.25vw, 0.8rem);
-    --step-0: clamp(0.75rem, 0.6786rem + 0.3571vw, 1rem);
-    --step-1: clamp(0.9rem, 0.8rem + 0.5vw, 1.25rem);
-    --step-2: clamp(1.08rem, 0.9421rem + 0.6893vw, 1.5625rem);
-    --step-3: clamp(1.2963rem, 1.1086rem + 0.9384vw, 1.9531rem);
-    --step-4: clamp(1.555rem, 1.3018rem + 1.2661vw, 2.4413rem);
-    --step-5: clamp(1.8663rem, 1.5275rem + 1.6938vw, 3.0519rem);
+    --step--2: clamp(0.5206rem, 0.4637rem + 0.2848vw, 0.72rem);
+    --step--1: clamp(0.625rem, 0.5464rem + 0.3929vw, 0.9rem);
+    --step-0: clamp(0.75rem, 0.6429rem + 0.5357vw, 1.125rem);
+    --step-1: clamp(0.9rem, 0.7554rem + 0.7232vw, 1.4063rem);
+    --step-2: clamp(1.08rem, 0.8863rem + 0.9688vw, 1.7581rem);
+    --step-3: clamp(1.2963rem, 1.0388rem + 1.2875vw, 2.1975rem);
+    --step-4: clamp(1.555rem, 1.2145rem + 1.7027vw, 2.7469rem);
+    --step-5: clamp(1.8663rem, 1.2005rem + 3.3286vw, 4.1963rem);
   }
 
 /*Possible colors for website: #DEACF5, #9754CB, #C3ABDB, #9D92D6
 video: Portfolio Website using HTML & CSS | personal portfolio website - 3s Webcoder
 Work on:
--Add @media Query
 *Make sure:
+    -take another look at the imgs for 700px and under
+        *.right .img-shape
+        *.about-me .about-img
+        *.proj .vm img
+    **REMOVE** FOR IMAGES WITH: 
+        -overflow: hidden;
+        -clip-path: circle(35%);
     -everything is working properly before moving on
     -everything looks presentable
     
@@ -30,19 +36,19 @@ body{
 }
 
 button{
-    font-size: var(--step--1);
+    font-size: var(--step-0);
 }
 
 h3{
-    font-size: var(--step-5);
+    font-size: var(--step-4);
 }
 
 h4{
-    font-size: var(--step-2);
+    font-size: var(--step-3);
 }
 
 h5{
-    font-size: var(--step-1);
+    font-size: var(--step-2);
 }
 
 a{
@@ -98,8 +104,8 @@ nav ul li a:hover{
 .top{
     width: 100%;
     max-width: 800px;
-    height: 125vh;
-    padding-top: 50px;
+    height: 80vh;
+    padding-top: 150px;
     margin: auto;
     margin-bottom: 100px;
     display: flex;
@@ -113,7 +119,7 @@ nav ul li a:hover{
     text-align: center;
     font-family: 'Dancing Script';
     margin: 400px 5px;
-    width: 300px;
+    width: 350px;
 }
 
 h1{
@@ -159,7 +165,7 @@ button:hover{
 }
 
 .right img{
-    width: 450px;
+    width: 400px;
     height: auto;
     margin-top: -450px;
     margin-left: -80px;
