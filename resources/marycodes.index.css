@@ -1,3 +1,14 @@
+:root {
+    --step--2: clamp(0.5206rem, 0.4865rem + 0.1705vw, 0.64rem);
+    --step--1: clamp(0.625rem, 0.575rem + 0.25vw, 0.8rem);
+    --step-0: clamp(0.75rem, 0.6786rem + 0.3571vw, 1rem);
+    --step-1: clamp(0.9rem, 0.8rem + 0.5vw, 1.25rem);
+    --step-2: clamp(1.08rem, 0.9421rem + 0.6893vw, 1.5625rem);
+    --step-3: clamp(1.2963rem, 1.1086rem + 0.9384vw, 1.9531rem);
+    --step-4: clamp(1.555rem, 1.3018rem + 1.2661vw, 2.4413rem);
+    --step-5: clamp(1.8663rem, 1.5275rem + 1.6938vw, 3.0519rem);
+  }
+
 /*Possible colors for website: #DEACF5, #9754CB, #C3ABDB, #9D92D6
 video: Portfolio Website using HTML & CSS | personal portfolio website - 3s Webcoder
 Work on:
@@ -7,13 +18,31 @@ Work on:
     -everything looks presentable
     
 */
+
 body{
     font-family: 'EB Garamond';
     background-color: #fff;
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 
+    200vh;
+}
+
+button{
+    font-size: var(--step--1);
+}
+
+h3{
+    font-size: var(--step-5);
+}
+
+h4{
+    font-size: var(--step-2);
+}
+
+h5{
+    font-size: var(--step-1);
 }
 
 a{
@@ -24,11 +53,13 @@ a{
 
 /*Navigation Bar*/
 nav{
+    font-size: var(--step--0);
     width: 100%;
     margin: auto;
     padding-top: 0;
     position: fixed;
     z-index: 1000;
+
 }
 
 nav.mobile{
@@ -65,9 +96,10 @@ nav ul li a:hover{
 /*A little about...*/
 
 .top{
-    width: 80%;
-    max-width: 850px;
-    height: 80vh;
+    width: 100%;
+    max-width: 800px;
+    height: 125vh;
+    padding-top: 50px;
     margin: auto;
     margin-bottom: 100px;
     display: flex;
@@ -75,15 +107,27 @@ nav ul li a:hover{
     align-items: center;
 }
 
-.top .right{
-    margin-top:-50px;
-    margin-left: 25px;
-}
+/*h's and p*/
 
 .left{
     text-align: center;
     font-family: 'Dancing Script';
+    margin: 400px 5px;
+    width: 300px;
+}
 
+h1{
+    width: 100%;
+    max-width: 350px;
+    font-size: var(--step-5);
+    margin-bottom: 50px;
+}
+
+.left-p{
+    font-size: var(--step-1);
+    max-width: 800px;
+    margin: 50px 50px;
+    margin-right: -325px;
 }
 
 button{
@@ -110,23 +154,21 @@ button:hover{
 
 /*Picture on right side of intro*/
 .right{
-    width: 100%;
-    height: 50%;
-    overflow: hidden; 
-    clip-path: path("M 0 300 L 0, 75 A 5,5 0,0,1 150,75 L 200 2000 z");
+    width: 1fr;
+    height: fit-content;
 }
 
 .right img{
-    width: 200px;
+    width: 450px;
     height: auto;
-    margin-top: -30px;
-    margin-left: -15px;
+    margin-top: -450px;
+    margin-left: -80px;
     
 }
 
 /*About me*/
 .about-me{
-    width: 80%;
+    width: 95%;
     max-width: 850px;
     height: 550px;
     margin: auto;
@@ -141,13 +183,14 @@ button:hover{
 
 .about-img img{
     width: auto;
-    height: 350px;
-    margin-left: 5px;
-    margin-right: 0;
+    height: 500px;
+    margin: 0;
 }
 
 .bottom .about{
+    width: 650px;
     margin: 15px;
+    margin-left: -50px;
     padding-bottom: 50px;
     justify-content: space-between;
 }
