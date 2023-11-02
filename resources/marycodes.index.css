@@ -587,6 +587,9 @@ This is the button that redirects to the #project section*/
     /*Picture on right side of intro*/
     
 /*About me*/
+#about{
+    height: 100px;
+}
 
 .about-me{
     width: 90%;
@@ -601,14 +604,15 @@ This is the button that redirects to the #project section*/
         width: 200px;
         height: 200px;
         margin: auto;
+        margin-top: 25px;
         clip-path: circle(45%);
   
     }
     
     .about-img img{
-    width: 300px;
-    margin-top: -100px;
-    margin-left: -20px;
+    width: 200px;
+    margin-top: -50px;
+    margin-left: 15px;
     }
     
     .bottom .about{
@@ -681,9 +685,9 @@ This is the button that redirects to the #project section*/
 }
 
 .right .img-shape img{
-    width: 350px;
-    margin-left: -60px;
-    margin-top: -30px;
+    width: 200px;
+    margin-left: 15px;
+    margin-top: 10px;
 }
 
     /*Footer*/
@@ -711,48 +715,122 @@ This is the button that redirects to the #project section*/
         display: block;
     }
 
-    /*A little about...
+.top{
+min-width: 200px;
+}
 
-    .top{
-        width: 300px;
-        left: -100px;
-    }
+/*h's and p*/
+.left{
+    width: 150px;
+margin-left: -80px;
+}
 
-    .top p{
-        width: 200%;
-    }
-    
-    /*Picture on right side of intro
-    .right{
-    left: 205px;
-    top: 425px;
-    }
-    
-    /*About me
-    
-    .about-me div.about-img{
-        margin-left: 30px;  
-    }
-    
-    .bottom .about{
-        margin: 8px;
-    }
+.left-p p{
+    width: 250px;
+    margin: 0;
+}
 
-/*Projects section
+.left h4{
+    margin: 0
+}
+
+.left-p{
+    width: 100%;
+    margin: 0 25px;
+}
+
+
+/*Picture on right side of intro*/
+.right{
+    width: 100px;
+    height: 100px;
+    margin-top: -600px;
+}
+
+.right .img-shape{
+    width: 150px;
+    height: 150px;
+}
+
+.right .img-shape img{
+    margin: -10px -20
+    px;
+    background-color: antiquewhite;
+}
+
+/*About me*/
+
+.about-me .about-img{
+    width: 160px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.about-img img{
+    width: 200px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: -10px;
+}
+
+.bottom .about{
+    margin: 0 15px;
+    padding-bottom: 0;
+    word-wrap: break-word;
+}
+
+/*My projects: 
+This is the button that redirects to the #project section*/
+
+#projects{
+    width: 100%;
+    margin: 0;
+}
+
+.myProjects{
+    width: 100%;
+    place-items: center;
+    margin: 0;    
+}
+
+.myProjects .box{
+    width: 180px;
+    padding: 15px 10px;
+    margin: 50px 5px;
+}
+
+.myProjects .box:hover{
+    padding: 11px 6px;
+    margin: 50px 5px;
+}
+
+/*Certification*/
+
+/*coursera*/
+
+.cert img{
+    width: 95%;
+    height: auto;
+}
+
+/*Projects section*/
+
+#projects{
+    width: 100%;
+    margin: 0;
+}
+
+.projects{
+    width: 100%;
+}
 
 .proj .cheat,
 .proj .cozy,
 .proj .website,
 .proj .vm{
-    width: 50%;
-   margin: 5px;
-}
-/*
-.proj .vm img{
-    width: auto;
-    height: 50px;
-}
+    width: 100%;
+   margin: 15px 15%;
 }
 
-
-/*Work on @media for */
+}
