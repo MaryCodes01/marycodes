@@ -12,14 +12,8 @@
 /*Possible colors for website: #DEACF5, #9754CB, #C3ABDB, #9D92D6
 video: Portfolio Website using HTML & CSS | personal portfolio website - 3s Webcoder
 Work on:
-*Make sure:
-    -take another look at the imgs for 700px and under
-        *.right .img-shape
-        *.about-me .about-img
-        *.proj .vm img
-    **REMOVE** FOR IMAGES WITH: 
-        -overflow: hidden;
-        -clip-path: circle(35%);
+-MEDIA QUERY 350px
+    *Make sure:
     -everything is working properly before moving on
     -everything looks presentable
     
@@ -132,7 +126,7 @@ h1{
 .left-p{
     font-size: var(--step-1);
     max-width: 800px;
-    margin: 50px 50px;
+    margin: 50px;
     margin-right: -325px;
 }
 
@@ -387,7 +381,7 @@ footer{
 /*A little about...*/
 
 .top{
-    margin: 0 5%;
+    margin: 0;
 }
 
 /*My projects: buttons that redirects to the #project section*/
@@ -405,7 +399,7 @@ footer{
     margin: 5%;
 }
 
-/*Tables: Certificates*/
+/*Certificates*/
 
 .cert img{
     width: auto;
@@ -440,65 +434,65 @@ footer{
 @media screen and (max-width: 700px){
 
     /*A little about...*/
-
 .top{
-    position: relative;
-    top: -50px;
-    left: -50px;
+    width: 85%;
+    padding-top: 250px;
 }
-
 .top p{
     width: 350px;
-    top: 150px;
-    position: absolute;
 }
 
+/*h's and p*/
+
 .left{
-    left: 100px;
-    position: absolute;
+    margin-top: 50px;
+}
+
+h1{
+    margin-bottom: 0;
+}
+
+.left-p p{
+    width: 100%;
+    margin: 0;
+}
+.left-p{
+    width: 425px;
+    margin-right: 0;
+    margin: 45px 50px;
 }
 
 button{
-    width: 150px;
-    position: absolute;
-    top: 250px;
+    width: 105px;
 }
 
 /*Picture on right side of intro*/
 .right{
-    width: 200px;
+    width: 250px;
     height: 200px;
-    clip-path: circle(40%);
-    position: absolute;
-    left: 215px;
-    top: 430px;
+    margin-top: -700px;
 }
 
 .right img{
-    width: 250px;
-    margin-top: -65px;
-    margin-left: -10px;
+    width: 300px;
+    margin: 0;
+    margin-left: -115px;
 }
 
 /*About me*/
-.about-me{
-    width: 95%;
-}
 
-.about-me div.about-img{
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    clip-path: circle(35%);
+.about-me .about-img{
+    width: 160px;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
 .about-img img{
-    width: 180px;
+    width: 200px;
     height: auto;
-    margin-top: 60px;
-    margin-left: 5px;
+    margin-top: 50px;
+    margin-left: -10px;
 }
 
 .bottom .about{
@@ -562,7 +556,7 @@ This is the button that redirects to the #project section*/
 
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 550px){
 
     /*navigation*/
 
@@ -577,43 +571,53 @@ This is the button that redirects to the #project section*/
     /*A little about...*/
 
     .top{
-        width: 300px;
-        left: -100px;
+        width: 100%;
+        margin: 0;
     }
 
-    .top p{
-        width: 200%;
-    }
-    
+/*h's and p*/
+
+.left{
+    margin-left: 10px;
+}
+
+.left-p{
+    margin: 50px;
+}
     /*Picture on right side of intro*/
-    .right{
-    left: 205px;
-    top: 425px;
-    }
     
-    /*About me*/
-    .about-me{
-        width: 100%;
-        height: fit-content;
-        display: block;
-        text-align: center;
-    }
+/*About me*/
+
+.about-me{
+    width: 90%;
+    height: fit-content;
+    display: block;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
     
-    .about-me div.about-img{
-        width: 250px;
-        height: 250px;
-        margin-top: -40px;
-        margin-left: 80px;
+    .about-me .about-img{
+        width: 200px;
+        height: 200px;
+        margin: auto;
         clip-path: circle(45%);
   
     }
     
     .about-img img{
-    width: 150px;
+    width: 300px;
+    margin-top: -100px;
+    margin-left: -20px;
     }
     
     .bottom .about{
-        margin: 25px;
+        width: 90%;
+        height: 450px;
+        padding: 15px;
+        margin: 0 15px;
+        word-wrap:break-word;
+        overflow: scroll;
     }
     
     /*My projects: 
@@ -648,6 +652,53 @@ This is the button that redirects to the #project section*/
 
 }
 
+@media screen and (max-width: 450px){
+/*h's and p*/
+
+.left{
+    width: 200px;
+    margin-left: 40px;
+}
+
+.left-p{
+    width: 280px;
+    margin: 50px 0;
+}
+
+/*A little about...*/
+.right{
+    margin-left: -55px;
+    margin-top: -605px;
+}
+
+.right .img-shape{
+    width: 225px;
+    height: 225px;
+    margin: auto;
+    clip-path: circle(45%);
+    overflow: hidden;
+    background: transparent;
+}
+
+.right .img-shape img{
+    width: 350px;
+    margin-left: -60px;
+    margin-top: -30px;
+}
+
+    /*Footer*/
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+    }
+
+    .contact h5{
+        margin: 0;
+    }
+}
+
 @media screen and (max-width: 350px){
 
     /*navigation*/
@@ -677,7 +728,7 @@ This is the button that redirects to the #project section*/
     top: 425px;
     }
     
-    /*About me*/
+    /*About me
     
     .about-me div.about-img{
         margin-left: 30px;  
@@ -687,7 +738,7 @@ This is the button that redirects to the #project section*/
         margin: 8px;
     }
 
-/*Projects section*/
+/*Projects section
 
 .proj .cheat,
 .proj .cozy,
